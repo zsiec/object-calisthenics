@@ -306,7 +306,7 @@ Here are the interactions:
  * There are 2 types of Jobs: JReq and ATS. 
   * JReq jobs require a resume to apply to them.
   * ATS jobs do not.
- *Jobseekers can not apply to a job with someone else’s resume.
+ * Jobseekers can not apply to a job with someone else’s resume.
 * Jobseekers should be able to see a listing of jobs they have saved for later viewing
 * Jobseekers should be able to see a listing of the jobs they have applied to
 * Recruiters should be able to see jobseekers who have applied to their jobs by both job and by    day. If possible, we would like to be able to combine to 2 and see jobseekers who have applied to a given job on a given day.
