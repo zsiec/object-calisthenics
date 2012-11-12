@@ -85,7 +85,8 @@ class Board
 
 Notice that another effect has occurred with this refactoring. Each individual method has become virtually trivial to match its implementation to its name. Determining the existence of bugs in these much smaller snippets is frequently much easier. 
 
-[Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
+See also:
+* [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
 
 ### Rule 2: Don’t use the ELSE keyword
 
@@ -111,8 +112,9 @@ express their intent more clearly.   But it’s not always easy to make the tran
 when we have ELSE in our back pocket.   So as part of this exercise, you’re not allowed to use
 ELSE.  Try the [Null Object pattern](https://en.wikipedia.org/wiki/Null_Object_pattern); it may help in some situations. There are other tools that can help you rid yourself of the else as well. See how many alternatives you can come up with.
 
-[Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
-[State Pattern](https://en.wikipedia.org/wiki/State_pattern)
+See also:
+* [Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
+* [State Pattern](https://en.wikipedia.org/wiki/State_pattern)
 
 ### Rule 3: Wrap all primitives and Strings
 
@@ -128,7 +130,8 @@ programmer additional info about what the value is and why it is being used.
 Small objects like Hour or Money also give us an obvious place to put behavior that would
 otherwise have been littered around other classes. This becomes especially true when you apply Rule 9, and only the small object can access the value. Note that this does not mean using object wrappers that are available in languages like Java. Using an Integer instead of an int confers no additional advantages in terms of expressing intent, whereas using a wrapper that expresses meaning within the problem domain both clarifies its usage and makes intent evident. 
 
-[Primitive Obsession Anti-Pattern](http://c2.com/cgi/wiki?PrimitiveObsession)
+See also:
+* [Primitive Obsession Anti-Pattern](http://c2.com/cgi/wiki?PrimitiveObsession)
 
 ### Rule 4: First class collections
 
@@ -184,8 +187,8 @@ builder.property1(“value”).property2(“value”).build();
 In this case it doesn’t violate the spirit of the rule since it doesn’t return any internal state or other classes.
 
 See also:
-[Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter)
-[Smythe’s Law of Demeter](https://practicingruby.com/articles/shared/srnckxzpbgrx)
+* [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter)
+* [Smythe’s Law of Demeter](https://practicingruby.com/articles/shared/srnckxzpbgrx)
 
 
 ### Rule 6: Don’t abbreviate
@@ -278,8 +281,9 @@ downstream effects, such as a dramatic reduction in duplication errors and a bet
 
 Another way this rule is commonly stated is “Tell, don’t ask”
 
-[Tell, don’t ask](http://c2.com/cgi/wiki?TellDontAsk)
-[A Design Compass: East Oriented](http://jamesladdcode.com/?p=12)
+See also:
+* [Tell, don’t ask](http://c2.com/cgi/wiki?TellDontAsk)
+* [A Design Compass: East Oriented](http://jamesladdcode.com/?p=12)
 
 ## Exercise
 
