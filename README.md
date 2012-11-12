@@ -1,4 +1,4 @@
-# [The Ladders’ Object Calisthenics][f1]
+# The Ladders’ Object Calisthenics
 
 ## Overview
 
@@ -318,4 +318,4 @@ Good luck! Remember, the most important part of being agile is early feedback, s
 
 ---
 
-[f1]: Based on “Jeff Bay’s 9 steps to better software design today” => http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf
+Based on “Jeff Bay’s 9 steps to better software design today” => http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf
