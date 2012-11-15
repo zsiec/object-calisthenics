@@ -53,7 +53,7 @@ class Board
     for (int i = 0; i < 10; i++) 
     {
       for (int j = 0; j < 10; j++) buf.append(data[i][j]);
-      buf.append(“\n”);
+      buf.append("\n");
     } 
     return buf.toString();
   }
@@ -78,7 +78,7 @@ class Board
   void collectRow(StringBuffer buf, int row) 
   {
     for (int i = 0; i < 10; i++) Buf.append(data[row][i]);
-    buf.append(“\n”);
+    buf.append("\n");
   }
 }
 ```
@@ -163,7 +163,7 @@ dots indicate that you’re violating encapsulation.  Try asking that object to 
 rather than poking around its insides.  A major part of encapsulation is not reaching across class
 boundaries into types that you shouldn’t know about. 
 
-The Law of Demeter (“Only talk to your friends”) is a good place to start, but think about it this
+The Law of Demeter ("Only talk to your friends") is a good place to start, but think about it this
 way:  You can play with your friends, you can play with your privates, but you can’t play with your friends’ privates:
 
 ```java
@@ -181,7 +181,7 @@ Rather, it’s a simplified way of stating the Law of Demeter.
 It’s worth noting that there are specific places where multiple dots make sense, but these are usually within the context of building a DSL or a design pattern, such as a Builder:
 
 ```java
-builder.property1(“value”).property2(“value”).build();
+builder.property1("value").property2("value").build();
 ```
 
 In this case it doesn’t violate the spirit of the rule since it doesn’t return any internal state or other classes.
@@ -279,7 +279,7 @@ encapsulation boundaries is to force programmers working on the code after you l
 for and place behavior into a single place in the object model. This has many beneficial
 downstream effects, such as a dramatic reduction in duplication errors and a better localization of changes to implement new features. This does not mean that variables of the same class cannot interact with one another in methods such as ‘equals’; because access to instance variables doesn’t leave the class, encapsulation is not violated.
 
-Another way this rule is commonly stated is “Tell, don’t ask”
+Another way this rule is commonly stated is "Tell, don’t ask"
 
 See also:
 * [Tell, don’t ask](http://c2.com/cgi/wiki?TellDontAsk)
@@ -323,4 +323,4 @@ Good luck! Remember, the most important part of being agile is early feedback, s
 
 ---
 
-Based on “Jeff Bay’s 9 steps to better software design today” => http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf
+Based on "Jeff Bay’s 9 steps to better software design today" => http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf
