@@ -226,41 +226,13 @@ In a more general sense, there are few cases where a cohesive single job descrip
 created for a class with many instance variables. As an example of the kind of dissection we are
 asking you to engage in:
 
-```java
-class Name 
-{
-  String first;
-  String middle;
-  String last;
-}
-```
+![Object Decomposition Example](/assets/2-instance-variables.png)
 
-could be decomposed into two classes thus:
-
-```java
-class Name 
-{
-  Surname family;
-  GivenNames given;
-}
-
-class Surname 
-{
-  String family;
-}
-
-class GivenNames 
-{
-  List<String> names;
-}
-```
-
-Note that in thinking about how to do the decomposition, the opportunity to separate the
-concerns of a family name (used for many legal entity restrictions) could be separated from an
-essentially different kind of name. The GivenName object here contains a list of names, allowing
-the new model to absorb people with first, middle, and other given names. Frequently,
-decomposition of instance variables leads to an understanding of commonality of several related
-instance variables. Sometimes several related instance variables actually have a related life in a
+Note that we could simply encode CustomerId, First Name and Last Name on the Customer object detailed in the
+image above. The Name object here contains a list of names, allowing the new model to absorb people with first 
+and last name (as well other possibilities such as middle & full) middle, and other given names. 
+Frequently, decomposition of instance variables leads to an understanding of commonality of several related
+instance variables. Sometimes several related instance variables actually have a related life in a 
 first class collection.
 
 Indeed, it is the authors' experience that decomposing objects from a set of attributes into a
