@@ -226,7 +226,7 @@ In a more general sense, there are few cases where a cohesive single job descrip
 created for a class with many instance variables. As an example of the kind of dissection we are
 asking you to engage in:
 
-![Object Decomposition Example](https://raw.github.com/TheLadders/object-calithenstics/master/assets/2-instance-variables.png)
+![Object Decomposition Example](https://raw.github.com/TheLadders/object-calisthenics/master/assets/2-instance-variables.png)
 
 Note that we could simply encode CustomerId, First Name and Last Name on the Customer object detailed in the
 image above. The Name object here contains a list of names, allowing the new model to absorb people with first 
