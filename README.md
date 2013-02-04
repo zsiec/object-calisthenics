@@ -271,25 +271,25 @@ We have 5 main entities in this domain:
 
 Here are the interactions:
 
-* Recruiters can post jobs
-* Recruiters should be able to see a listing of the jobs they have posted
-* Jobseekers can save jobs onsite for later viewing
+* Recruiters can post jobs.
+* Recruiters should be able to see a listing of the jobs they have posted.
+* Jobseekers can save jobs onsite for later viewing.
 * Jobseekers can apply to jobs posted by recruiters.
  * There are 2 types of Jobs: JReq and ATS. 
   * JReq jobs require a resume to apply to them.
   * ATS jobs do not.
  * Jobseekers can not apply to a job with someone else’s resume.
-* Jobseekers should be able to see a listing of jobs they have saved for later viewing
-* Jobseekers should be able to see a listing of the jobs they have applied to
-* Recruiters should be able to see jobseekers who have applied to their jobs by both job and by day. If possible, we would like to be able to combine the 2 and see jobseekers who have applied to a given job on a given day.
+* Jobseekers should be able to see a listing of jobs they have saved for later viewing.
+* Jobseekers should be able to see a listing of the jobs for which they have applied.
+* Recruiters should be able to see jobseekers who have applied to their jobs by both job and day. If possible, we would like to be able to combine the 2 and see jobseekers who have applied to a given job on a given day.
 * TheLadders should be able to see jobseekers who have applied to jobs on any given day.
-* The Ladders should be able to see aggregate application numbers by job and by recruiter
-* Jobseekers when displayed, should be displayed by their name.
-* Recruiters when displayed, should be displayed by their name.
-* Jobs when displayed should be displayed with a title
-* TheLadders wants the system to be able to handle more than 1 job with the same title.
-* TheLadders wants the system to be able to handle more than 1 jobseeker with the same name.
-* TheLadders wants the system to be able to handle more than 1 recruiter with the same name.
+* TheLadders should be able to see aggregate job application numbers by job and recruiter.
+* Jobseekers, when displayed, should be displayed by their name.
+* Recruiters, when displayed, should be displayed by their name.
+* Jobs, when displayed, should be displayed with a title.
+* TheLadders wants the system to be able to handle more than one job with the same title.
+* TheLadders wants the system to be able to handle more than one jobseeker with the same name.
+* TheLadders wants the system to be able to handle more than one recruiter with the same name.
 
 Good luck! Remember, the most important part of being agile is early feedback, so be sure to consult with whoever is guiding you through this exercise often. There are no stupid questions if asking them leads to better results.
 
