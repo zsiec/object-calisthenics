@@ -281,7 +281,7 @@ Here are the interactions:
  * Jobseekers can not apply to a job with someone else’s resume.
 * Jobseekers should be able to see a listing of jobs they have saved for later viewing
 * Jobseekers should be able to see a listing of the jobs they have applied to
-* Recruiters should be able to see jobseekers who have applied to their jobs by both job and by    day. If possible, we would like to be able to combine to 2 and see jobseekers who have applied to a given job on a given day.
+* Recruiters should be able to see jobseekers who have applied to their jobs by both job and by day. If possible, we would like to be able to combine the 2 and see jobseekers who have applied to a given job on a given day.
 * TheLadders should be able to see jobseekers who have applied to jobs on any given day.
 * The Ladders should be able to see aggregate application numbers by job and by recruiter
 * Jobseekers when displayed, should be displayed by their name.
