@@ -1,6 +1,6 @@
 class JobseekerJobManager < UserJobManager
-  def apply_to(job)
-    @jobs.push JobseekerAppliedJob.new(job_params(job))
+  def apply_to(job, resume=nil)
+    @jobs.push JobseekerAppliedJob.new(job_params(job).merge(resume: resume))
   end
 
   def applied_jobs

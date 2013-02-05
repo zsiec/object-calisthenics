@@ -8,7 +8,7 @@ describe Recruiter do
 
     it 'should allow recruiters to post jobs' do
       @recruiter.posted_jobs.length.should == 0
-      @recruiter.post_job('Most awesome job ever')
+      @recruiter.post_job('Most awesome job ever', 'Jreq')
       @recruiter.posted_jobs.length.should == 1
     end
   end

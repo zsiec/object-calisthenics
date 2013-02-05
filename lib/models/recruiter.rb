@@ -4,8 +4,8 @@ class Recruiter < User
     super options
   end
 
-  def post_job name
-    @recruiter_job_manager.post_job name
+  def post_job name, type
+    @recruiter_job_manager.post_job name, JobType.new(type)
   end
 
   def posted_jobs

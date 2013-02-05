@@ -1,11 +1,12 @@
 class Jobseeker < User
   def initialize(options={})
     @jobseeker_job_manager = JobseekerJobManager.new user: self
+    @resume = options.try(:[], :resume)
     super options
   end
 
   def apply_to(job)
-    @jobseeker_job_manager.apply_to(job)
+    @jobseeker_job_manager.apply_to(job, @resume)
   end
 
   def applied_jobs
