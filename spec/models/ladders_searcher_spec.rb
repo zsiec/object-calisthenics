@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'timecop'
 
-describe LaddersSearch do
+describe LaddersSearcher do
   context 'TheLadders can search all applications' do
     before do
       @jobseeker1 = Jobseeker.new(name: 'Sammy Seeker1')
@@ -23,7 +23,7 @@ describe LaddersSearch do
         @jobseeker4.apply_to(@job1)
       end
 
-      @searcher = LaddersSearch.new
+      @searcher = LaddersSearcher.new
     end
 
     it 'should return jobseekers who applied for jobs on a specific date' do
