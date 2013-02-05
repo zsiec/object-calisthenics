@@ -1,5 +1,6 @@
 TheLadders Object Calisthenics 5/2/2013
 ===
+_by Thomas Symborski_
 
 Make sure to run have rubygems and bundler installed and run `bundle install` from the root of this repo.
 
