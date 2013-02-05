@@ -1,10 +1,4 @@
-class JobseekerJobManager
-  def initialize options={}
-    @jobseeker = options.try :[], :jobseeker
-    @jobs = []
-    raise 'The jobseeker job manager is invalid' unless valid?
-  end
-
+class JobseekerJobManager < UserJobManager
   def apply_to(job)
     @jobs.push JobseekerAppliedJob.new(job_params(job))
   end
@@ -23,15 +17,7 @@ class JobseekerJobManager
 
   private
 
-  def job_list(klass)
-    @jobs.select {|job| job.is_a?(klass)}.map(&:job)
-  end
-
-  def job_params(job)
-    { jobseeker: @jobseeker, job: job }
-  end
-
   def valid?
-    return true if @jobseeker.is_a?(Jobseeker)
+    return true if @user.is_a?(Jobseeker)
   end
 end

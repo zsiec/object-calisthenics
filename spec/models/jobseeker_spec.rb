@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Jobseeker do
   context 'Applying to a job' do
     before do 
-      @job = Job.new
+      @job = Job.new(name: 'Awesome Job')
       @jobseeker = Jobseeker.new(name: 'Thomas')
     end
 

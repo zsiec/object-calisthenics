@@ -1,6 +1,6 @@
 class Jobseeker < User
-  def initialize(options)
-    @jobseeker_job_manager = JobseekerJobManager.new jobseeker: self
+  def initialize(options={})
+    @jobseeker_job_manager = JobseekerJobManager.new user: self
     super options
   end
 
