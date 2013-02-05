@@ -1,0 +1,2 @@
+class RecruiterPostedJobs < UserJobs
+end

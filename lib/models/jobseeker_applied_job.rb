@@ -2,11 +2,7 @@ class JobseekerAppliedJob < JobseekerJob
   def initialize options
     @resume = options.try(:[], :resume)
     super options
-    APPLIED_JOBS.add_applied_job self
-  end
-
-  def belongs_to? jobseeker
-    @user == jobseeker
+    APPLIED_JOBS.add_job self
   end
 
   private

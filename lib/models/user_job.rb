@@ -14,6 +14,10 @@ class UserJob
     @user #agh!
   end
 
+  def belongs_to? user
+    @user == user
+  end
+
   def for_job? job
     @job == job
   end
