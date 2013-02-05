@@ -1,0 +1,2 @@
+class JobseekerAppliedJob < JobseekerJob
+end

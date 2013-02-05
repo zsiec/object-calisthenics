@@ -1,0 +1,2 @@
+class JobseekerSavedJob < JobseekerJob
+end
