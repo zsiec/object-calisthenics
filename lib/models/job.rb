@@ -5,6 +5,10 @@ class Job
     raise 'The job is not valid' unless valid?
   end
 
+  def display_value
+    @name
+  end
+
   def needs_resume?
     @type.requires_resume?
   end
