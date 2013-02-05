@@ -1,4 +1,5 @@
+$:.unshift File.dirname(__FILE__)
 require 'irb'
-require '~/projects/onboarding/day1/object-calisthenics/include'
+require 'include'
 ARGV.clear
 IRB.start
