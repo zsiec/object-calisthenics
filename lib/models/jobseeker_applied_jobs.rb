@@ -6,13 +6,21 @@ class JobseekerAppliedJobs
   def add_applied_job applied_job
     @applied_jobs.push applied_job
   end
+  
+  def search_all filters
+    run_filters_and_return @applied_jobs, filters
+  end
 
-  def search_subset(jobs, filters)
+  def search_subset jobs, filters
     subset = @applied_jobs.select {|applied_job| jobs.include? applied_job.job }
-    subset = filter(subset, 'jobseeker_filter', filters[:jobseeker]) if filters[:jobseeker]
-    subset = filter(subset, 'created_on_filter', filters[:created_on]) if filters[:created_on]
-    subset = filter(subset, 'job_filter', filters[:job]) if filters[:job]
-    return_by_type subset, filters.try(:[], :return_type)
+    run_filters_and_return subset, filters
+  end
+
+  def run_filters_and_return applied_jobs, filters
+    applied_jobs = filter(applied_jobs, 'jobseeker_filter', filters[:jobseeker]) if filters[:jobseeker]
+    applied_jobs = filter(applied_jobs, 'created_on_filter', filters[:created_on]) if filters[:created_on]
+    applied_jobs = filter(applied_jobs, 'job_filter', filters[:job]) if filters[:job]
+    return_by_type applied_jobs, filters.try(:[], :return_type)
   end
 
   private
