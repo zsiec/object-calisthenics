@@ -1,5 +1,5 @@
 class Recruiter < User
-  def initialize(options={})
+  def initialize options={}
     @recruiter_job_manager = RecruiterJobManager.new user: self
     super options
   end

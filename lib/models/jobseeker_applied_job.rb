@@ -9,7 +9,7 @@ class JobseekerAppliedJob < JobseekerJob
 
   def valid?
     return false unless @user.is_a?(Jobseeker) && @job.is_a?(Job)
-    return false if @job.needs_resume? && !@resume.is_a?(Resume)
+    return false if @job.requires_resume? && !@resume.is_a?(Resume)
     true
   end
 end

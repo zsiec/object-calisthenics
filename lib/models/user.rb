@@ -1,7 +1,7 @@
 require 'active_support/core_ext/object/try'
 
 class User
-  def initialize(options={})
+  def initialize options={}
     @name = options.try :[], :name
     raise 'The user is not valid' unless valid?
   end

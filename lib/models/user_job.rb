@@ -1,5 +1,5 @@
 class UserJob
-  def initialize(options)
+  def initialize options
     @user       = options.try :[], :user
     @job        = options.try :[], :job
     @created_on = Date.today #OMG bad. dont. 3? whaaaa?

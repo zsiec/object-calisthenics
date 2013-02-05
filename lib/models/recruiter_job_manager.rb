@@ -1,6 +1,6 @@
 class RecruiterJobManager < UserJobManager
   def post_job name, type
-    job = create_job(name, type)
+    job = create_job name, type
     @jobs.push RecruiterPostedJob.new job_params(job)
     job
   end

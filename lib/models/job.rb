@@ -1,7 +1,7 @@
 class Job
   def initialize(options={})
-    @name = options.try(:[], :name)
-    @type = options.try(:[], :type)
+    @name = options.try :[], :name
+    @type = options.try :[], :type
     raise 'The job is not valid' unless valid?
   end
 
@@ -9,7 +9,7 @@ class Job
     @name
   end
 
-  def needs_resume?
+  def requires_resume?
     @type.requires_resume?
   end
 
