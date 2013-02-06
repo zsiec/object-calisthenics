@@ -1,9 +1,4 @@
-class JobType
-  def initialize type
-    @type = type
-    raise 'Invalid job type' unless valid?
-  end
-
+class JobType < AbstractModel
   def requires_resume?
     %w(Jreq).include? @type
   end

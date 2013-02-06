@@ -1,8 +1,7 @@
 class JobseekerAppliedJob < JobseekerJob
   def initialize options
-    @resume = options.try(:[], :resume)
-    super options
     APPLIED_JOBS.add_job self
+    super options
   end
 
   private

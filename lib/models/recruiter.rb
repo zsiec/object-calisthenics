@@ -5,7 +5,7 @@ class Recruiter < User
   end
 
   def post_job name, type
-    @recruiter_job_manager.post_job name, JobType.new(type)
+    @recruiter_job_manager.post_job name, JobType.new(type: type)
   end
 
   def jobseekers_applied_to_job job

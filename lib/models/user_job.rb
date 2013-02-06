@@ -1,13 +1,11 @@
-class UserJob
+class UserJob < AbstractModel
   def initialize options
-    @user       = options.try :[], :user
-    @job        = options.try :[], :job
-    @created_on = Date.today #OMG bad. dont. 3? whaaaa?
-    raise 'The user job is invalid' unless valid?
+    @created_on = Date.today
+    super options
   end
 
   def job
-    @job #also getter
+    @job #getter
   end
 
   def user

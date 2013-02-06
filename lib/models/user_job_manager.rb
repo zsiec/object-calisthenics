@@ -1,14 +1,13 @@
-class UserJobManager
+class UserJobManager < AbstractModel
   def initialize options={}
-    @user = options.try :[], :user
     @jobs = []
-    raise 'The job manager is invalid' unless valid?
+    super options
   end
 
   private
 
   def job_list klass
-    @jobs.select {|job| job.is_a?(klass)}.map(&:job)
+    @jobs.select {|job| job.is_a?(klass) }.map(&:job)
   end
 
   def job_params job

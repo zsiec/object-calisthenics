@@ -1,10 +1,4 @@
-class Job
-  def initialize(options={})
-    @name = options.try :[], :name
-    @type = options.try :[], :type
-    raise 'The job is not valid' unless valid?
-  end
-
+class Job < AbstractModel
   def display_value
     @name
   end
