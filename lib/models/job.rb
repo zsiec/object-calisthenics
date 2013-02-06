@@ -1,5 +1,5 @@
 class Job < AbstractModel
-  def display_value
+  def display_name
     @name
   end
 

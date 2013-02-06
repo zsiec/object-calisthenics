@@ -23,10 +23,4 @@ class UserJob < AbstractModel
   def created_on? day
     @created_on == day
   end
-
-  private
-
-  def valid?
-    return true if @user.is_a?(User) && @job.is_a?(Job)
-  end
 end

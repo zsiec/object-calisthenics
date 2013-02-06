@@ -13,8 +13,4 @@ class UserJobManager < AbstractModel
   def job_params job
     { user: @user, job: job }
   end
-
-  def valid?
-    return true if @user.is_a?(User)
-  end
 end

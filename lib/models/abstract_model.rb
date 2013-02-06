@@ -6,9 +6,7 @@ class AbstractModel
 
   private
 
-  def valid?
-    true
-  end
+  def valid?; true end
 
   def validate
     throw InvalidObjectException unless valid?

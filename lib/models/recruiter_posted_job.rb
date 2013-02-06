@@ -1,7 +1,7 @@
 class RecruiterPostedJob < UserJob
   def initialize options
-    super options
     POSTED_JOBS.add_job self
+    super options
   end
 
   private
